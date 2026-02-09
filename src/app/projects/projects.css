@@ -1,0 +1,162 @@
+
+.projects-container {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  padding: 60px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Projects Section */
+.projects-section {
+  margin-bottom: 80px;
+}
+
+.projects-section > h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.project-card {
+  background-color: #242424;
+  border: 1px solid #333333;
+  border-radius: 12px;
+  padding: 40px 30px;
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+  background-color: #2a2a2a;
+  border-color: #444444;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.project-card .description {
+  font-size: 1rem;
+  color: #b0b0b0;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.tech-stack {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tech-tag {
+  background-color: #333333;
+  color: #e0e0e0;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border: 1px solid #444444;
+}
+
+.tech-tag:hover {
+  background-color: #444444;
+  border-color: #555555;
+}
+
+/* Skills Rating Section */
+.skills-rating-section {
+  margin-top: 60px;
+}
+
+.skills-rating-section > h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.skills-category {
+  margin-bottom: 50px;
+}
+
+.skills-category h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+}
+
+.skill-item {
+  display: flex;
+  justify-content: flex-start;   
+  align-items: center;
+  gap: 40px;                  
+  max-width: 600px;             
+  margin: 0 auto 15px auto;    
+  padding: 16px 20px;
+  background-color: #242424;
+  border-radius: 8px;
+  border-left: 3px solid #444444;
+  transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+  background-color: #2a2a2a;
+  border-left-color: #666666;
+}
+
+.skill-name {
+  width: 100%;        
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #e0e0e0;
+
+}
+
+.skill-rating {
+ font-size: 1.2rem;
+  letter-spacing: 4px;
+  color: #e0e0e0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .projects-container {
+    padding: 40px 15px;
+  }
+
+  .projects-section > h2,
+  .skills-rating-section > h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .project-card {
+    padding: 30px 20px;
+  }
+
+  .skill-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .skill-rating {
+    align-self: flex-start;
+  }
+}

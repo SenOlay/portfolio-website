@@ -1,0 +1,59 @@
+<!-- ../HEADER -->
+<header class="hero">
+  <div class="hero-container">
+    <div class="hero-image">
+      <img src="images/profile.jpg" alt="Jansen Olay">
+    </div>
+
+    <div class="hero-content">
+      <h1>Jansen Olay</h1>
+      <p class="subtitle">Full Stack Developer | Creative Problem Solver</p>
+    </div>
+  </div>
+</header>
+
+<!-- NAVIGATION -->
+<nav class="nav-container">
+  <button class="nav-btn" [class.active]="currentSection === 'about'" (click)="navigateTo('about')">About</button>
+  <button class="nav-btn" [class.active]="currentSection === 'projects'" (click)="navigateTo('projects')">Projects</button>
+  <button class="nav-btn" [class.active]="currentSection === 'contact'" (click)="navigateTo('contact')">Contact</button>
+</nav>
+
+<!-- CONTENT -->
+<main class="content">
+  <section *ngIf="currentSection === 'about'" class="section-card about-section">
+    <h2>About Me</h2>
+    <p>Hi! I'm Jansen Olay, a frontend-focused developer passionate about creating beautiful, responsive, and user-friendly web applications. I specialize in modern frontend technologies while maintaining solid backend fundamentals.</p>
+    <h3>Core Skills</h3>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <strong>Frontend</strong>
+        <p>Angular, React, TypeScript, HTML5, CSS3, Responsive Design</p>
+      </div>
+      <div class="skill-category">
+        <strong>Backend</strong>
+        <p>Node.js, Express, REST APIs</p>
+      </div>
+      <div class="skill-category">
+        <strong>Tools</strong>
+        <p>Git, npm, webpack, Docker basics</p>
+      </div>
+    </div>
+    <h3>What I Do</h3>
+    <p>I craft engaging user interfaces and seamless user experiences. With expertise in component-based architecture and modern JavaScript frameworks, I build scalable single-page applications. I also understand backend basics to effectively collaborate and create full-stack solutions when needed.</p>
+  </section>
+
+  <section *ngIf="currentSection === 'projects'" class="section-card">
+    <app-projects></app-projects>
+  </section>
+
+  <section *ngIf="currentSection === 'contact'" class="section-card">
+    <app-contacts></app-contacts>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2024 Jansen Olay. All rights reserved.</p>
+</footer>
+
