@@ -23,24 +23,93 @@
 <main class="content">
   <section *ngIf="currentSection === 'about'" class="section-card about-section">
     <h2>About Me</h2>
-    <p>Hi! I'm Jansen Olay, a frontend-focused developer passionate about creating beautiful, responsive, and user-friendly web applications. I specialize in modern frontend technologies while maintaining solid backend fundamentals.</p>
+    <p>Hi! I'm Jansen Olay, a frontend specialist passionate about building elegant, responsive, and user-centric web applications. I excel at leveraging Angular and TypeScript to craft scalable component architectures, integrate complex features, and design intuitive interfaces that deliver exceptional user experiences. I maintain solid backend fundamentals for seamless full-stack collaboration.</p>
+    <a href="https://drive.google.com/file/d/1cxHPegZA8TO_1MuvYhIUmUtqSKUL0n4E/view"
+      target="_blank"
+      class="resume-link">
+      <span class="arrow"></span>
+      <span class="text">Check out my resume</span>
+    </a>
     <h3>Core Skills</h3>
     <div class="skills-grid">
       <div class="skill-category">
         <strong>Frontend</strong>
-        <p>Angular, React, TypeScript, HTML5, CSS3, Responsive Design</p>
+        <p>Angular, TypeScript, HTML5, SCSS, Responsive Design, </p>
       </div>
       <div class="skill-category">
         <strong>Backend</strong>
-        <p>Node.js, Express, REST APIs</p>
+        <p>Node.js, REST APIs, .NET, MS SQL</p>
       </div>
       <div class="skill-category">
         <strong>Tools</strong>
-        <p>Git, npm, webpack, Docker basics</p>
+        <p>Git, Npm, Azure Devops, Jira Software, Bamboo</p>
       </div>
     </div>
     <h3>What I Do</h3>
     <p>I craft engaging user interfaces and seamless user experiences. With expertise in component-based architecture and modern JavaScript frameworks, I build scalable single-page applications. I also understand backend basics to effectively collaborate and create full-stack solutions when needed.</p>
+
+
+       <!-- Skills Rating Section -->
+  <section class="skills-rating-section">
+    <h2>Skills Rating</h2>
+    
+    <div class="skills-category">
+      <h3>Frontend</h3>
+      
+      <div class="skill-item">
+        <span class="skill-name">Angular</span>
+        <span class="skill-rating"  >⚫⚫⚫⚫⚪</span>
+      </div>
+
+      <div class="skill-item">
+        <span class="skill-name">TypeScript</span>
+        <span class="skill-rating"  >⚫⚫⚫⚫⚪</span>
+      </div>
+
+      <div class="skill-item">
+        <span class="skill-name">SCSS</span>
+        <span class="skill-rating"  >⚫⚫⚫⚪⚪</span>
+      </div>
+
+      <div class="skill-item">
+        <span class="skill-name">HTML</span>
+        <span class="skill-rating"  >⚫⚫⚫⚫⚫</span>
+      </div>
+    </div>
+    
+    <div class="skills-category">
+      <h3>Backend</h3>
+      <div class="skill-item">
+        <span class="skill-name">C#</span>
+        <span class="skill-rating"  >⚫⚫⚫⚪⚪</span>
+      </div>
+
+      <div class="skill-item">
+        <span class="skill-name">.NET</span>
+        <span class="skill-rating"  >⚫⚫⚫⚪⚪</span>
+      </div>
+      <div class="skill-item">
+        <span class="skill-name">.MS SQL</span>
+        <span class="skill-rating"  >⚫⚫⚫⚪⚪</span>
+      </div>
+    </div>
+    <div class="skills-category">
+      <h3>Tools</h3>
+      <div class="skill-item">
+        <span class="skill-name">Jira Software</span>
+        <span class="skill-rating"  >⚫⚫⚫⚪⚪</span>
+      </div>
+
+      <div class="skill-item">
+        <span class="skill-name">Azure DevOps</span>
+        <span class="skill-rating"  >⚫⚫⚫⚪⚪</span>
+      </div>
+      <div class="skill-item">
+        <span class="skill-name">Git</span>
+        <span class="skill-rating"  >⚫⚫⚫⚪⚪</span>
+      </div>
+    </div>
+  </section>
   </section>
 
   <section *ngIf="currentSection === 'projects'" class="section-card">
@@ -50,6 +119,8 @@
   <section *ngIf="currentSection === 'contact'" class="section-card">
     <app-contacts></app-contacts>
   </section>
+
+ 
 </main>
 
 <!-- FOOTER -->
