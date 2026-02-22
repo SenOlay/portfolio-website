@@ -1,11 +1,21 @@
 
+  .form-group input,
+.form-group textarea {
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+  
   .contact-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
+    gap: 3rem;
+    background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+    padding: 4rem;
+    border-radius: 12px;
+    color: #e0e0e0;
   }
   
   .contact-column {
@@ -15,70 +25,191 @@
   }
   
   .contact-column h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
   }
   
   .contact-info {
-    margin-bottom: 15px;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .contact-info:last-of-type {
+    border-bottom: none;
   }
   
   .contact-info h3 {
-    font-size: 16px;
-    margin-bottom: 8px;
-    color: #333;
+    font-size: 0.9rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0.8rem;
+    font-weight: 500;
   }
   
   .contact-info p {
     margin: 0;
-    font-size: 16px;
+    font-size: 1.1rem;
+    color: #e0e0e0;
   }
   
   .contact-info a {
+    color: #e0e0e0;
     text-decoration: none;
-    color: #0066cc;
+    transition: all 0.3s ease;
+    position: relative;
   }
   
   .contact-info a:hover {
-    text-decoration: underline;
+    color: #fff;
   }
   
   .social-links {
-    margin-top: 20px;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
   
   .social-links h3 {
-    font-size: 16px;
-    margin-bottom: 12px;
+    font-size: 0.9rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
   }
   
   .social-icon {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    margin-right: 15px;
-    font-size: 24px;
-    color: #333;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    color: #e0e0e0;
     text-decoration: none;
-    transition: color 0.3s ease;
+    margin-right: 1rem;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
   }
   
   .social-icon:hover {
-    color: #0066cc;
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+    color: #fff;
   }
   
   .map-column {
-    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
   
-  @media (max-width: 768px) {
-    .contact-container {
-      grid-template-columns: 1fr;
-      gap: 30px;
-    }
-    
-    iframe {
-      height: 300px !important;
-    }
-
+  .map-column iframe {
+    border-radius: 8px;
+    background: #0a0a0a;
   }
+  
+  .lets-talk-section {
+    grid-column: 1 / -1;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .lets-talk-section h2 {
+    font-size: 2rem;
+    margin: 0;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+  .lets-talk-title{
+    margin: 0 0 3rem 0;
+  }
+  .section-subtitle{
+    font-style: italic;
+  }
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 0.9rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    color: #e0e0e0;
+    font-family: inherit;
+    transition: all 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  .submit-btn {
+    padding: 0.75rem 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    color: #e0e0e0;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+  }
+  
+  .submit-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    transform: translateY(-2px);
+  }
+  
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem; /* smaller */
+  }
+
+  .lets-talk-title {
+    margin-bottom: 1.5rem; /* reduce big gap */
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 0.7rem 0.9rem;
+    font-size: 0.95rem;
+  }
+
+  .submit-btn {
+    width: 100%; /* full width button */
+  }
+}
